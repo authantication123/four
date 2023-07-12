@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        background-color: #f2f2f2;
+      }
+      
+      .logo {
+        font-size: 18px;
+        font-weight: bold;
+        text-decoration: none;
+        color: #333;
+      }
+      
+      .menu {
+        display: flex;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+      
+      .menu li {
+        margin-left: 20px;
+      }
+      
+      .menu li a {
+        text-decoration: none;
+        color: #333;
+      }
+      
+      .menu-icon {
+        display: none;
+        cursor: pointer;
+      }
+      
+      .bar {
+        width: 25px;
+        height: 3px;
+        background-color: #333;
+        margin: 5px 0;
+      }
+      
+      @media screen and (max-width: 768px) {
+        .menu {
+          display: none;
+        }
+      
+        .menu-icon {
+          display: block;
+        }
+      
+        .menu-responsive {
+          display: block;
+          padding: 10px;
+          background-color: #f2f2f2;
+        }
+      
+        .menu-responsive li {
+          margin: 10px 0;
+        }
+      
+        .menu-responsive li a {
+          text-decoration: none;
+          color: #333;
+        }
+      }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+          <a class="logo" href="#">Logo</a>
+          <div class="menu-icon">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+          <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <script src="scripto.js"></script>
+</body>
+</html>
